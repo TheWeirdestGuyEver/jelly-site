@@ -66,6 +66,7 @@ function setupCategoryInteractions() {
     item.addEventListener("click", () => {
       if (!isMobileViewport()) return;
 
+      categories.classList.add("hovering");
       clearActiveText();
       item.classList.add("active-text");
       setActiveVideo(targetId);

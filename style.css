@@ -379,7 +379,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.85;
+  opacity: 0.95;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
@@ -393,6 +393,7 @@ body {
   height: 100%;
   object-fit: contain;
   display: block;
+  filter: brightness(0) invert(1);
 }
 
 /* -------------------- LARGE TABLET / SMALL LAPTOP -------------------- */
@@ -452,7 +453,7 @@ body {
   }
 
   .contact-main {
-    padding: 420px 24px 70px;
+    padding: 310px 24px 70px;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -499,7 +500,7 @@ body {
   }
 
   .contact-main {
-    padding-top: 470px;
+    padding-top: 340px;
   }
 }
 
@@ -528,7 +529,7 @@ body {
   }
 
   .contact-main {
-    padding: 360px 18px 70px;
+    padding: 280px 18px 70px;
   }
 
   .contact-card {
