@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="home-page">
+
+  <div class="video-layer">
+    <video
+      class="bg-video active"
+      id="video-showcase"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      data-desktop="./assets/videos/showcase-1.mp4"
+      data-mobile="./assets/videos/showcase-1-mobile.mp4"
+    ></video>
+
+    <video
+      class="bg-video"
+      id="video-property"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      data-desktop="./assets/videos/property-preview.mp4"
+      data-mobile="./assets/videos/property-preview-mobile.mp4"
+    ></video>
+
+    <video
+      class="bg-video"
+      id="video-films"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      data-desktop="./assets/videos/films-preview.mp4"
+      data-mobile="./assets/videos/films-preview-mobile.mp4"
+    ></video>
+
+    <video
+      class="bg-video"
+      id="video-commercial"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      data-desktop="./assets/videos/commercial-preview.mp4"
+      data-mobile="./assets/videos/commercial-preview-mobile.mp4"
+    ></video>
+
+    <div class="overlay"></div>
+  </div>
+
+  <header class="header">
+    <a href="./index.html" class="logo logo-link jelly-logo">Jelly.</a>
+
+    <div class="menu-wrap">
+      <button class="menu-button" id="menuToggle" type="button" aria-expanded="false" aria-controls="menuPanel">
+        Menu
+      </button>
+
+      <div class="menu-panel" id="menuPanel">
+        <a href="./contact.html" class="menu-link">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="categories" aria-label="Categories">
+    <div class="item" data-target="video-property">Property</div>
+    <div class="item" data-target="video-films">Films</div>
+    <div class="item" data-target="video-commercial">Commercial</div>
+  </nav>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jelly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="contact-page">
+
+  <div class="contact-background"></div>
+  <div class="contact-overlay"></div>
+
+  <header class="header">
+    <a href="./index.html" class="logo logo-link jelly-logo">Jelly.</a>
+  </header>
+
+  <main class="contact-main left-layout">
+    <section class="contact-card liquid-glass">
+      <h1 class="contact-title">Contact Us</h1>
+      <p class="contact-subtitle">Tell us a little about your project.</p>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" placeholder="Company name">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about the project..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Send</button>
+      </form>
+
+      <section class="social-footer">
+        <a href="https://instagram.com/jellyfilmworks" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="./assets/icons/instagram.svg" alt="Instagram">
+        </a>
+
+        <a href="https://tiktok.com/@jellyfilmworks" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img src="./assets/icons/tiktok.svg" alt="TikTok">
+        </a>
+
+        <a href="https://youtube.com/@jellyfilmworks" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img src="./assets/icons/youtube.svg" alt="YouTube">
+        </a>
+      </section>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
