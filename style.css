@@ -133,7 +133,7 @@ body {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 1;
   background: transparent;
   border: none;
   color: #fff;
@@ -162,6 +162,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
+  z-index: 2;
 }
 
 .menu-wrap.is-open .menu-panel {
